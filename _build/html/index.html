@@ -1,0 +1,330 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>MAKER Genome Annotation using cc-tools and Jetstream(WQ-MAKER) &mdash; WQ-Maker 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/cyverse.js"></script>
+        <script src="_static/detail-expand.js"></script>
+        <script src="_static/question-answer.js"></script>
+        <script src="_static/intercom-script-for-learning.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/cyverse.css" type="text/css" />
+  <link rel="stylesheet" href="_static/detail-expand.css" type="text/css" />
+  <link rel="stylesheet" href="_static/question-answer.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="MAKER Genome Annotation using cc-tools and Jetstream(WQ-MAKER)" href="Step1&amp;2.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> WQ-Maker
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">      Quickstart home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Step1&amp;2.html">Step One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Step3.html"><strong>MAKER Genome Annotation using cc-tools and Jetstream(WQ-MAKER)</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Step3.html#part-3-set-up-a-maker-run-using-the-terminal-window-instead-if-you-want-to-run-the-wq-maker-using-jupyter-notebook-please-see-the-section-below">Part 3: Set up a MAKER run using the Terminal window. Instead IF you want to run the WQ-MAKER using Jupyter notebook please see the section below</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Step3.html#note-advanced-users"><strong>Note(Advanced Users)</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Step3.html#moving-data-from-cyverse-datastore-using-icommands"><strong>Moving data from CyVerse Datastore using iCommands</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Step4.html">      Step Four</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">WQ-Maker</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li><strong>MAKER Genome Annotation using cc-tools and Jetstream(WQ-MAKER)</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a class="reference external" href="http://learning.cyverse.org/"><img alt="CyVerse_logo" src="_images/cyverse_learning.png" style="width: 500px;" /></a></p>
+<p><a class="reference external" href="http://learning.cyverse.org/"><img alt="Home_Icon" src="_images/homeicon.png" style="width: 25px; height: 25px;" /></a>
+<a class="reference external" href="http://learning.cyverse.org/">Learning Center Home</a></p>
+<div class="section" id="maker-genome-annotation-using-cc-tools-and-jetstream-wq-maker">
+<h1><strong>MAKER Genome Annotation using cc-tools and Jetstream(WQ-MAKER)</strong><a class="headerlink" href="#maker-genome-annotation-using-cc-tools-and-jetstream-wq-maker" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="rationale-and-background">
+<h2>Rationale and background:<a class="headerlink" href="#rationale-and-background" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>MAKER is a flexible and scalable genome annotation pipeline that automates the many steps necessary for the detection of protein coding genes (Campbell et al. 2013). MAKER identifies repeats, aligns ESTs and proteins to a genome, produces ab initio gene predictions, and automatically synthesizes these data into gene annotations having evidence-based quality indices.  MAKER was developed by the Yandell Lab and is described in several publications (Cantarel et al. 2008; Holt &amp; Yandell 2011).  Additional background is available at the MAKER Tutorial at GMOD and is highly recommended reading.</p>
+<p>MAKER with CCTools (aka WQ-MAKER) is a modified MAKER annotation tools capable of running MAKER on distributed computing resources such as Jetstream cloud (Thrasher et al., 2012). Using the work-queue platform, users can now run MAKER across multiple virtual machines to achieve a several fold reduction in the duration of the MAKER run.</p>
+<p>This tutorial will take users through steps of:</p>
+<ol class="arabic simple">
+<li><p>Running WQ-MAKER on Jetstream cloud</p></li>
+<li><p>Running WQ-MAKER on an example genome assembly data</p></li>
+</ol>
+</div></blockquote>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">      Quickstart home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Step1&amp;2.html">Step One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Step3.html"><strong>MAKER Genome Annotation using cc-tools and Jetstream(WQ-MAKER)</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Step3.html#part-3-set-up-a-maker-run-using-the-terminal-window-instead-if-you-want-to-run-the-wq-maker-using-jupyter-notebook-please-see-the-section-below">Part 3: Set up a MAKER run using the Terminal window. Instead IF you want to run the WQ-MAKER using Jupyter notebook please see the section below</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Step3.html#note-advanced-users"><strong>Note(Advanced Users)</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Step3.html#note"><strong>Note</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Step3.html#moving-data-from-cyverse-datastore-using-icommands"><strong>Moving data from CyVerse Datastore using iCommands</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Step4.html">      Step Four</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Step4.html#part-4-set-up-a-maker-run-using-the-jupyter-notebook"><strong>Part 4: Set up a MAKER run using the Jupyter notebook</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step4.html#note"><strong>Note</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="Step4.html#additional-information-help">Additional information, help</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="quick-start-maintainer-s">
+<h2>Quick Start Maintainer(s)<a class="headerlink" href="#quick-start-maintainer-s" title="Permalink to this headline">¶</a></h2>
+<p>Who to contact if this quick start needs fixing. You can also email
+<a class="reference external" href="mailto:learning&#37;&#52;&#48;CyVerse&#46;org">learning<span>&#64;</span>CyVerse<span>&#46;</span>org</a></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Maintainer</p></th>
+<th class="head"><p>Institution</p></th>
+<th class="head"><p>Contact</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Vibhor Mehta</p></td>
+<td><p>CyVerse / UA</p></td>
+<td><p><a class="reference external" href="mailto:vibhormehta&#37;&#52;&#48;email&#46;arizona&#46;edu">vibhormehta<span>&#64;</span>email<span>&#46;</span>arizona<span>&#46;</span>edu</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p><strong>Sounds great, what do I need to get started?</strong></p>
+<ol class="arabic simple">
+<li><p>Jetstream allocation. If you don’t have one, you can send in your request to add you to CyVerse’s JS allocation through the intercom (button on the bottom right on this page).</p></li>
+<li><p>XSEDE account</p></li>
+<li><p>Your data (or you can run example data)</p></li>
+</ol>
+<p><strong>What kind of data do I need?</strong></p>
+<ol class="arabic simple">
+<li><p>Mandatory Requirements</p></li>
+</ol>
+<blockquote>
+<div><p>1.1 Genome assembly(fasta file)</p>
+<p>1.2 Organism Type</p>
+<blockquote>
+<div><p>1.2.1 Eukaryotic(default, set as: organism_type=eukaryotic)
+1.2.2 Prokaryotic(default, set as: organism_type=prokaryotic)</p>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Additional data that can be used to improve the annotation (Highly recommended)</p></li>
+</ol>
+<blockquote>
+<div><p>2.1 RNA evidence (at least one of them is needed)</p>
+<blockquote>
+<div><p>2.1.1 Assembled mRNA-seq transcriptome (fasta file)</p>
+<p>2.1.2 Expressed sequence tags (ESTs) data (fasta file)</p>
+<p>2.1.3 Aligned EST or transcriptome GFF3 from your organism</p>
+<p>2.1.4 Aligned EST or transcriptome GFF3 from a closely related organism</p>
+</div></blockquote>
+<p>2.2 Protein evidence</p>
+<blockquote>
+<div><p>2.2.1 protein sequence file in fasta format (i.e. from multiple organisms)</p>
+<p>2.2.2 protein gff (aligned protein homology evidence from an external GFF3 file)</p>
+</div></blockquote>
+</div></blockquote>
+<p><strong>What kind of resources will I need for my project?</strong></p>
+<ol class="arabic simple">
+<li><p>Enough storage space on the WQ-MAKER Jetstream instance for both input and output files</p></li>
+</ol>
+<blockquote>
+<div><p>1.1 Creating and mounting an external volume to the running WQ-MAKER MASTER instance would be recommended</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>One Master and several workers needed for running your computation</p></li>
+</ol>
+<blockquote>
+<div><p>2.1 Benchmarking results for data sets can help you estimate the number of workers need for running your annotation</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Enough AUs to run your computation</p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Step1&amp;2.html" class="btn btn-neutral float-right" title="MAKER Genome Annotation using cc-tools and Jetstream(WQ-MAKER)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, CyVerse
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
